@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:200,300,regular,500,600,700,800,900);
+@keyframes animatedBackground {
+    0% { background-color: #2F3F73; }
+    50% { background-color: #505F90; }
+    100% { background-color: #2F3F73; }
+}
+
+body
+{
+    color: papayawhip;
+    background-color: #2F3F73;
+    animation: animatedBackground 5s infinite;
+    height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.box{
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    background: linear-gradient(to top  , #2F3F73, #505F90);    border: 2px solid #333;
+    display: flex; /* Add this line */
+    justify-content: center; /* Add this line */
+    align-items: center; /* Add this line */
+    border-radius: 100px;
+    box-shadow: 2px 2px 5px 1px #07123A;
+    border-style: none;
+    opacity: .8;
+    z-index: 2; /* Place the bubbles behind the box */
+    font-weight: bold;
+}
+
+.button {
+    width: 150px;
+    height: 70px;
+    padding: 10px 20px;
+    margin: 0 50px;
+    background-color: #505F90;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px 2px #07123A;
+    color: #07123A;
+}
+
+.button:hover{
+    background-color: #7A86AD;
+}
+
+.container {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.bubble {
+    /* Bubble styles */
+    position: absolute;
+    background-color: #172556;
+    opacity: 0.1;
+    animation: floatingBubble 4s infinite;
+    border-radius: 50%;
+    /* Glow effect */
+    box-shadow: 0 0 10px 5px #172556;
+    z-index: 1; /* Place the bubbles behind the box */
+}
+
+@keyframes floatingBubble {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(100px, -100px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
