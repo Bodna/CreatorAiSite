@@ -30,6 +30,19 @@ function createBubbles() {
                 document.body.appendChild(bubble);
             }
 }
-
+function DownloadImage(){
+    var image = document.querySelector('img.final-image');
+    var imageURL = image.src;
+    var fileName = 'download.png'; // Replace 'image.png' with the desired filename
+  
+    var link = document.createElement('a');
+    link.href = imageURL;
+    link.download = fileName;
+    link.target = '_blank';
+  
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
 
 window.addEventListener("DOMContentLoaded", createBubbles);
