@@ -5,6 +5,9 @@
     100% { background-color: #2F3F73; }
 }
 
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 body
 {
     color: papayawhip;
@@ -38,21 +41,24 @@ body
 }*/
 .box{
     position: relative;
-    width: 1700px;
-    height: 900px;
+    /*width: 1700px;
+    height: 900px;*/
+    width: 80%;
+    height: 80%;
     border-radius: 100px;
     background: linear-gradient(to top  , #2F3F73, #505F90);
-    opacity: .5;
+    backdrop-filter: blur( 4px );
+    opacity: .7;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-   display: flex;  
+    display: flex;  
     justify-content: left;  
     align-items: center;
     z-index: 2;
 }
 
 .image{
-    height: 700px;
-    width: 700px;
+    height: 75%;
+    width: 40%;
     position: absolute;
     background-color: #505F90;
     right: 50px;
@@ -61,12 +67,21 @@ body
     border-radius: 100px;
     box-shadow: 4px 4px 10px 2px #07123A;
     overflow: hidden;
+
 }
+
+.buttons{
+    border-style: solid;
+    border-color: black;
+}
+
 .button {
-    width: 150px;
-    height: 70px;
-    padding: 10px 20px;
-    margin: 0 50px;
+    width: 10%;
+    height: 10%;
+    /*width: auto;
+    height: auto;*/
+    padding: 20px 40px;
+    margin: 0 2%;
     background-color: #505F90;
     border: none;
     border-radius: 30px;
@@ -75,6 +90,10 @@ body
     box-shadow: 4px 4px 10px 2px #07123A;
     color: #07123A;
     font-weight: bold;
+    align-items: center;
+    display: flex;  
+    justify-content: center;  
+    overflow: hidden;
 }
 
 .final-image{
@@ -94,8 +113,8 @@ body
     transform: translate(-50%, -50%);
     opacity: 0;
     /*transition: opacity 0.3s;*/
-    height: 60px;
-    width: 60px;
+    height: 10%;
+    width: 10%;
 }
 .download:hover{
     filter: brightness(70%);
@@ -114,8 +133,6 @@ body
     
     position: absolute;
     transform-style: preserve-3d;
-    border-style: solid;
-    border-color: aliceblue;
     width: 100%;
     height: 100%;
 }

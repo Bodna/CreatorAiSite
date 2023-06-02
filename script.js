@@ -1,5 +1,5 @@
 function createBubbles() {
-    var numBubbles = 300;
+    var numBubbles = 1200;
 
             var bubbleColors = ["#7A86AD", "#505F90", "#172556", "#07123A"]; // Array of predefined bubble colors
 
@@ -8,8 +8,8 @@ function createBubbles() {
                 bubble.classList.add("bubble");
 
                 // Generate random positions for bubbles
-                var xPos = Math.floor(Math.random() * (window.innerWidth * 1));
-                var yPos = Math.floor(Math.random() * (window.innerHeight * 1));
+                var xPos = Math.floor(Math.random() * (window.innerWidth * 4));
+                var yPos = Math.floor(Math.random() * (window.innerHeight * 4));
                 // Generate random size for bubbles
                 var size = Math.floor(Math.random() * 40) + 10; // Range: 10 - 50px
 
