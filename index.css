@@ -111,8 +111,13 @@ body
 }
 
 .container {
-    position: relative;
+    
+    position: absolute;
     transform-style: preserve-3d;
+    border-style: solid;
+    border-color: aliceblue;
+    width: 100%;
+    height: 100%;
 }
 
 .bubble {

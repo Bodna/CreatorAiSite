@@ -1,5 +1,5 @@
 function createBubbles() {
-    var numBubbles = 100;
+    var numBubbles = 300;
 
             var bubbleColors = ["#7A86AD", "#505F90", "#172556", "#07123A"]; // Array of predefined bubble colors
 
@@ -27,7 +27,10 @@ function createBubbles() {
                 var duration = Math.random() * 5 + 2; // Range: 2 - 6 seconds
                 bubble.style.animationDuration = duration + "s";
 
-                document.body.appendChild(bubble);
+                var destination = document.getElementById("container");
+                destination.appendChild(bubble);
+                //document.body.appendChild(bubble);
+
             }
 }
 function DownloadImage(){
